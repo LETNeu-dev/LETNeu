@@ -1,0 +1,201 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+@layer base {
+  :root {
+    /* Research Lab Theme - Deep Blues and Teals */
+    --background: 0 0% 100%;
+    --foreground: 215 28% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    /* Deep blue */
+    --primary: 210 100% 26%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light blue/gray */
+    --secondary: 203 27% 93%;
+    --secondary-foreground: 210 100% 26%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 28% 40%;
+
+    /* Custom accent color - Light blue */
+    --accent: 193 90% 54%; /* #1ec4f3 */
+    --accent-foreground: 0 0% 100%;
+
+    /* Custom highlight color - red */
+    --highlight: 342 94% 67%; /* #B82132 */
+    --highlight-foreground: 0 0% 100%;
+
+    /* Custom extra color - Light yellow */
+    --extra: 46 83% 72%; /* #f0d37f */
+    --extra-foreground: 215 28% 17%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 215 28% 17%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    /* Custom accent color - Darker blue for dark mode */
+    --accent: 193 80% 40%; /* Darker version of #1ec4f3 */
+    --accent-foreground: 210 40% 98%;
+
+    /* Custom highlight color - Darker pink for dark mode */
+    --highlight: 342 70% 55%; /* Darker version of #B82132 */
+    --highlight-foreground: 210 40% 98%;
+
+    /* Custom extra color - Darker yellow for dark mode */
+    --extra: 46 60% 60%; /* Darker version of #f0d37f */
+    --extra-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  /* stylelint-disable at-rule-no-unknown */
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* stylelint-enable at-rule-no-unknown */
+}
+
+/* Custom classes */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.team-member-image-gradient {
+  background: linear-gradient(45deg, rgba(30,196,243,0.2), rgba(133, 0, 38, 0.2));
+}
+
+.scroll-marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-marquee .scroll-track {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 1.5rem;
+  white-space: nowrap;
+  min-width: 100%;
+  animation-duration: 28s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.scroll-marquee:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+.scroll-marquee.scroll-right .scroll-track {
+  animation-name: scroll-right;
+}
+
+.scroll-marquee.scroll-left .scroll-track {
+  animation-name: scroll-left;
+}
+
+.scroll-marquee .scroll-track > div {
+  white-space: normal;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Video fallback handling */
+video:not([src]), video[src=""] {
+  display: none;
+}
+
+video:not([src]) + .video-fallback,
+video[src=""] + .video-fallback,
+video.error + .video-fallback {
+  display: block !important;
+}
