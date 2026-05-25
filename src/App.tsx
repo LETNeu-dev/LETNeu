@@ -10,6 +10,8 @@ import About from "./pages/About";
 import Research from "./pages/Research";
 import Publications from "./pages/Publications";
 import Team from "./pages/Team";
+import TeamCategory from "./pages/TeamCategory";
+import CollaboratorsCategory from "./pages/CollaboratorsCategory";
 import Events from "./pages/Events";
 import UpcomingEventDetail from "./pages/UpcomingEventDetail";
 import PastEventDetail from "./pages/PastEventDetail";
@@ -47,6 +49,8 @@ const App = () => (
           <Route path="/research" element={<Research />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/team/collaborators" element={<CollaboratorsCategory />} />
+          <Route path="/team/:category" element={<TeamCategory />} />
           <Route path="/events" element={<Events />} />
           <Route path="/events/:id" element={<UpcomingEventDetail />} />
           <Route path="/events/past/:id" element={<PastEventDetail />} />

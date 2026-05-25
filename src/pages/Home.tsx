@@ -15,7 +15,7 @@ import SponsorBanner from "@/components/sections/SponsorBanner";
 import { administration, faculty } from "@/data/teamData";
 import { recentPublications } from "@/data/publicationsData";
 import { researchAreas } from "@/data/researchData";
-import { collaborators, funders } from "@/data/collaboratorsData";
+import { funders } from "@/data/collaboratorsData";
 import { allEvents } from "@/data/eventsData";
 
 const Home = () => {
@@ -213,37 +213,25 @@ const Home = () => {
       <section className="py-20 bg-secondary/50 dark:bg-gray-800/50">
         <div className="container mx-auto px-4">
           <SectionHeading
-            title="Collaborators & Funders"
+            title="Our Funders"
             subtitle="Our research is supported by collaborations and funding from prestigious institutions worldwide."
           />
 
-          <div className="mt-12">
-            <h3 className="text-xl md:text-2xl font-bold text-primary mb-6">Key Collaborators</h3>
-            <div className="scroll-marquee scroll-right py-2">
-              <div className="scroll-track">
-                {[...collaborators, ...collaborators].map((collaborator, index) => (
-                  <div
-                    key={`collab-${index}`}
-                    className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 text-center dark:border dark:border-gray-700 min-w-[140px] sm:min-w-[180px] md:min-w-[220px]"
-                  >
-                    <div className="w-20 h-20 mx-auto mb-3 rounded-full overflow-hidden">
-                      <img
-                        src={collaborator.imageUrl}
-                        alt={collaborator.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <h4 className="font-medium text-primary">{collaborator.name}</h4>
-                    <p className="text-sm text-foreground/70">{collaborator.institution}</p>
-                    <p className="text-xs text-foreground/60">{collaborator.country}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          {/* <div className="mt-12 text-center">
+            <p className="text-foreground/80 mb-6">
+              We collaborate with leading researchers and institutions across the globe. View our full list of collaborators on our dedicated page.
+            </p>
+            <Link
+              to="/team/collaborators"
+              className="inline-flex items-center px-6 py-3 bg-primary dark:bg-black dark:text-white bg-white text-black font-medium rounded-md hover:bg-primary/90 transition-colors"
+            >
+              <span>View All Collaborators</span>
+              <ArrowRight size={18} className="ml-2" />
+            </Link>
+          </div> */}
 
-          <div className="mt-12">
-            <h3 className="text-xl md:text-2xl font-bold text-primary mb-6">Our Funders</h3>
+          <div className="mt-16">
+            {/* <h3 className="text-xl md:text-2xl font-bold text-primary mb-6 text-center">Our Funders</h3> */}
             <div className="scroll-marquee scroll-left py-2">
               <div className="scroll-track">
                 {[...funders, ...funders].map((funder, index) => (

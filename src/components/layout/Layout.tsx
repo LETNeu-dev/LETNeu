@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 
 interface LayoutProps {
   children: ReactNode;
@@ -22,6 +23,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </motion.main>
       <Footer />
+      <Analytics />
     </div>
   );
 };
