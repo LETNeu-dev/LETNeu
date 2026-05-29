@@ -55,7 +55,7 @@ export const upcomingEvents: Event[] = [
     description: [
       {
         subheading: undefined,
-        body: "The workshop aims to provide a scholarly and contemporary update on the use of Caenorhabditis elegans as a powerful and cost-effective model organism for genetic and neuroscience research. Lectures will be delivered by distinguished international and local scholars. The theoretical knowledge will be fully enhanced with hands-on research techniques incuding C. elegans husbandry, behavioral assays, host-microbe biology, RNAi procedures for gene silencing and in vivo fluorescent imaging. Participants will also gain practical experience in genetic mutant selection and phenotypic scoring to support innovate genetics research in low-resource settings.\nSelected participants will have their registration fully waived, meals and workshop materials covered."
+        body: "The workshop aims to provide a scholarly and contemporary update on the use of Caenorhabditis elegans as a powerful and cost-effective model organism for genetic and neuroscience research. Lectures will be delivered by distinguished international and local scholars. The theoretical knowledge will be fully enhanced with hands-on research techniques incuding C. elegans husbandry, behavioral assays, host-microbe biology, RNAi procedures for gene silencing and in vivo fluorescent imaging. Participants will also gain practical experience in genetic mutant selection and phenotypic scoring to support innovate genetics research in low-resource settings.\nA limited number of travel stipends to partly support transport and accommodation may be available.\nSelected participants will have their registration fully waived, meals and workshop materials covered."
       },
       {
         subheading: "Who Should apply?",
@@ -135,15 +135,15 @@ export const upcomingEvents: Event[] = [
     ],
     speakers: [
       {
-        name: "Prof Felix AA Soares",
+        name: "Prof Felix A.A Soares",
         position: "Professor of Biochemistry",
         affiliation: "Centre of Natural and Exact Sciences (CCNE), Federal University of Santa Maria, Brazil",
         role: "Speaker (Virtually)",
         // imageUrl: "https://i.postimg.cc/3NY3PDSJ/LETNeu-ISN-2025.jpg"
       },
       {
-        name: "Prof. Daiana Silva Avila (F), Associate Professor and Leader",
-        position: "Global Health Policy Consultant",
+        name: "Prof. Daiana Silva Avila",
+        position: "Associate Professor and Leader",
         affiliation: "Laboratory of Biochemistry and Toxicology in Caenorhabditis elegans (GBToxCe), Federal University of Pampa, Brazil.",
         role: "Speaker (Virtually)",
         // imageUrl: "https://i.postimg.cc/3NY3PDSJ/LETNeu-ISN-2025.jpg"
@@ -275,24 +275,17 @@ export const pastEvents: Event[] = [
     ],
     speakers: [
       {
-        name: "Prof Felix AA Soares",
-        position: "Professor of Biochemistry",
-        affiliation: "Centre of Natural and Exact Sciences (CCNE), Federal University of Santa Maria, Brazil",
-        role: "Speaker (Virtually)",
+        name: "Prof Samuel O. Oluwafemi",
+        position: "Professor of Nanotechnology",
+        affiliation: "Leader for Nanotechnology for Biological, Energy, and Water (CHEM-NANOBEW) Group, University of Johannesburg, South Africa",
+        role: "Speaker",
         // imageUrl: "https://i.postimg.cc/3NY3PDSJ/LETNeu-ISN-2025.jpg"
       },
       {
-        name: "Prof. Daiana Silva Avila (F), Associate Professor and Leader",
-        position: "Global Health Policy Consultant",
-        affiliation: "Laboratory of Biochemistry and Toxicology in Caenorhabditis elegans (GBToxCe), Federal University of Pampa, Brazil.",
-        role: "Speaker (Virtually)",
-        // imageUrl: "https://i.postimg.cc/3NY3PDSJ/LETNeu-ISN-2025.jpg"
-      },
-      {
-        name: "Dr Omamuyovwi M. Ijomone",
-        position: "Associate Professor and Group Leader",
-        affiliation: "LETNeu, and Department of Anatomy, FBMS, UNIMED",
-        role: "Speaker and Organizer",
+        name: "Prof. Olumide A. T. Ogundahunsi",
+        position: "Professor of Pharmacology and Therapeutics, UNIMED",
+        affiliation: "Senior Diplomat Staff, World Health Organization, Geneva (Retired)",
+        role: "Speaker",
         // imageUrl: "https://i.postimg.cc/3NY3PDSJ/LETNeu-ISN-2025.jpg"
       }
     ],
