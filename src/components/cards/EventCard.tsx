@@ -113,7 +113,7 @@ const EventCard = ({
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 bg-red-600 text-white font-bold rounded-md hover:bg-red-700 transition-all text-sm shadow-md"
             >
-              Register
+              Apply Here
               <ArrowRight size={16} className="ml-2" />
             </a>
           )}
