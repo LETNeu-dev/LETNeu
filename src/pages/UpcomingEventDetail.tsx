@@ -147,9 +147,9 @@ const UpcomingEventDetail = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="text-2xl font-bold text-primary mb-4">Registration Details</h2>
+                <h2 className="text-2xl font-bold text-primary mb-4">Application Details</h2>
                 <p className="text-foreground/80 mb-4">
-                  Register for this upcoming event using the link below. Fees and more details are provided if available.
+                  Click the link below to apply.
                 </p>
                 {event.fees && event.fees.length > 0 && (
                   <ul className="list-disc pl-5 mb-4 text-foreground/80 space-y-2">
@@ -165,7 +165,7 @@ const UpcomingEventDetail = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-5 py-3 rounded-md font-medium text-white bg-primary border border-transparent transition-colors hover:bg-transparent hover:text-primary hover:border-primary dark:bg-red-600 dark:text-white dark:hover:bg-white dark:hover:text-red-600"
                   >
-                    Register Now
+                    Apply Now
                     <ArrowRight size={16} className="ml-2" />
                   </a>
                 ) : (
