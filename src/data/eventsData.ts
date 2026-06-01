@@ -69,7 +69,7 @@ export const upcomingEvents: Event[] = [
     imageUrl: "/hero-media/c-elegans-toheeb.webp",
     registrationUrl: "https://forms.gle/wcZB9Wjz2W1TU9J27",
     fees: [
-      "NO FEES REQUIRED"
+      "Deadline: Friday 10th July, 2026"
     ],
     organizers: [
       {

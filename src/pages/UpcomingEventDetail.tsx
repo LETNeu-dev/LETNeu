@@ -149,7 +149,7 @@ const UpcomingEventDetail = () => {
               >
                 <h2 className="text-2xl font-bold text-primary mb-4">Application Details</h2>
                 <p className="text-foreground/80 mb-4">
-                  Click the link below to apply.
+                  Click the link below to apply. <br/> No fees required.
                 </p>
                 {event.fees && event.fees.length > 0 && (
                   <ul className="list-disc pl-5 mb-4 text-foreground/80 space-y-2">
