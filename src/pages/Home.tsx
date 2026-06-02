@@ -117,7 +117,7 @@ const Home = () => {
 
           <div className="mt-12 text-center">
             <Link
-              to="/about"
+              to="/research"
               className="inline-flex items-center px-6 py-3 bg-primary  dark:bg-black dark:text-white bg-white text-black  font-medium rounded-md hover:bg-primary/90 transition-colors"
             >
               <span>Our Ongoing Research</span>

@@ -88,7 +88,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">Research</NavLink>
+          <NavLink to="/research">Research</NavLink>
           <NavLink to="/publications">Publications</NavLink>
           <div
             className="relative"
@@ -181,7 +181,7 @@ const Navbar = () => {
         >
           <div className="container mx-auto px-4 py-3 flex flex-col space-y-4">
             <MobileNavLink to="/" onClick={toggleMenu}>Home</MobileNavLink>
-            <MobileNavLink to="/about" onClick={toggleMenu}>Research</MobileNavLink>          
+            <MobileNavLink to="/research" onClick={toggleMenu}>Research</MobileNavLink>          
             <MobileNavLink to="/publications" onClick={toggleMenu}>Publications</MobileNavLink>
             <div className="space-y-1">
               <span className="block px-4 py-2 text-foreground dark:text-gray-300 font-medium">Team</span>

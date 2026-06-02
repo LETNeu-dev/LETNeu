@@ -6,8 +6,8 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Research from "./pages/Research";
+import ResearchOld from "./pages/Research-old";
 import Publications from "./pages/Publications";
 import Team from "./pages/Team";
 import TeamCategory from "./pages/TeamCategory";
@@ -45,8 +45,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/research" element={<Research />} />
+          <Route path="/research-old" element={<ResearchOld />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/team" element={<Team />} />
           <Route path="/team/collaborators" element={<CollaboratorsCategory />} />

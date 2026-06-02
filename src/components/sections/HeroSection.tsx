@@ -117,7 +117,7 @@ const HeroSection = ({ title, subtitle, media }: HeroSectionProps) => {
           >
             {/* Button 1: Bordered/Outlined */}
             <Link
-              to="/about"
+              to="/research"
               className="inline-flex items-center px-5 py-3 sm:px-8 sm:py-4 border-2 border-white text-white font-bold rounded-md hover:bg-white hover:text-black transition-all"
             >
               Explore Our Research
