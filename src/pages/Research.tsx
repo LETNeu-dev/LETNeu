@@ -51,6 +51,7 @@ const Research = () => {
   }, []);
 
   // Auto-switch media (images every 3s, videos every 5s)
+  // Auto-switch media (images every 3s, videos every 5s)
   useEffect(() => {
     const intervals: number[] = [];
 
@@ -74,6 +75,34 @@ const Research = () => {
 
     return () => {
       intervals.forEach((interval) => clearInterval(interval));
+    };
+  }, []);
+
+  // Enforce video muting - ensures all videos are muted even if HTML attribute fails
+  useEffect(() => {
+    const muteAllVideos = () => {
+      const videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+        video.muted = true;
+        video.volume = 0;
+      });
+    };
+
+    // Initial mute
+    muteAllVideos();
+
+    // Watch for any unmuting attempts and re-enforce
+    const observer = new MutationObserver(() => {
+      muteAllVideos();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+
+    return () => {
+      observer.disconnect();
     };
   }, []);
   return (
@@ -122,49 +151,6 @@ const Research = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* About Us */}
-      {/* <section className="py-16 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">About Our Lab</h2>
-              <p className="text-foreground/80 mb-4">
-                The Laboratory for Experimental and Translational Neurobiology (LETNeu) is a research-intensive group at the University of Medical Sciences, Ondo (UNIMED). We study metal neurotoxicity, developmental neurotoxicity; mechanisms of neurodegeneration; gene-environment interactions and gut microbiome modulation in brain disorder; and environmental toxicology.
-              </p>
-              <p className="text-foreground/80 mb-4">
-                Our research aims to understand how the brain is affected by an interplay of genetic and environmental factors that trigger neuronal perturbations and/or neuronal death at critical stages of development and across the lifespan.
-              </p>
-              <p className="text-foreground/80">
-                Specifically, we focus on the role of metals as environmental toxicants interacting with genetic mutations in the pathogenesis of brain disorders including autism, Parkinson's, and Alzheimer's.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Our Research Approach</h2>
-              <p className="text-foreground/80 mb-4">
-                Our research investigates how these factors influence pathophysiological pathways such as neuro-inflammatory, oxidative redox imbalance, and mitochondrial dysfunctions. Furthermore, given the emerging evidence of gut microbiome in various neurological disorders, our lab also investigates the multifactorial interactions of the environment, genes, and gut microbiome in brain diseases.
-              </p>
-              <p className="text-foreground/80 mb-4">
-                Understanding these complex interactions could be key to identifying better disease biomarkers and new drug targets and developing multifactorial therapeutic interventions.
-              </p>
-              <p className="text-foreground/80">
-                Our research leverages various experimental models particularly rodents and the innovative C. elegans via a combination of multiple approaches that include behavioural phenotypic studies, microscopic imaging, immunoassays, spectrophotometric and spectrometric analysis, gene expression, and transcriptomics analysis.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Research Focus Areas */}
       <section className="py-16 bg-white dark:bg-gray-900">
