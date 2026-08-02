@@ -15,6 +15,12 @@ export interface TeamMember {
   position?: string;
 }
 
+export interface AlumniMember {
+  id: number;
+  name: string;
+  role?: string;
+}
+
 export const administration: TeamMember[] = [
   {
     id: 1,
@@ -234,41 +240,39 @@ export const researchAssociatesAndGraduateTrainees: TeamMember[] = [
   }
 
 
-  // {
-  //   id: 12,
-  //   name: "Joy Dubem Iroegbu",
-  //   role: "Alumni",
-  //   bio: "Former researcher at LETNeu.",
-  //   image: "https://i.postimg.cc/g0JjpgSg/m12.png"
-  // },
-  // {
-  //   id: 13,
-  //   name: "Comfort Ofure Okoh",
-  //   role: "Alumni",
-  //   bio: "Former researcher at LETNeu.",
-  //   image: "https://i.postimg.cc/zvmGn8JQ/m13.png"
-  // },
-  // {
-  //   id: 14,
-  //   name: "Godslove Emmanuel Emeka",
-  //   role: "Alumni",
-  //   bio: "Former researcher at LETNeu.",
-  //   image: "https://i.postimg.cc/N0zMjRZB/m14.png"
-  // },
-  // {
-  //   id: 15,
-  //   name: "Grace Akingbade, PhD",
-  //   role: "Alumni",
-  //   bio: "Former researcher at LETNeu.",
-  //   image: "https://i.postimg.cc/g24j1CDw/m15.png"
-  // },
-  // {
-  //   id: 17,
-  //   name: "Ayodele Samuel Adewale",
-  //   role: "Intern",
-  //   bio: "Research intern at LETNeu.",
-  //   image: "https://i.postimg.cc/rwqznVSX/m17.png"
-  // }
 ];
 
-export const allTeamMembers = [...administration, ...faculty, ...researchAssociatesAndGraduateTrainees];
+export const alumni: AlumniMember[] = [
+  {
+    id: 100,
+    name: "Joy D. Iroegbu",
+    role: "Alumni"
+  },
+  {
+    id: 101,
+    name: "Grace Akingbade",
+    role: "Alumni"
+  },
+  {
+    id: 102,
+    name: "Chibuzor F. Ifenatuoha",
+    role: "Alumni"
+  },
+  {
+    id: 103,
+    name: "Nzube F. Olung",
+    role: "Alumni"
+  },
+  {
+    id: 104,
+    name: "Samuel Ayodele",
+    role: "Alumni"
+  },
+  {
+    id: 105,
+    name: "Rhoda Adeola",
+    role: "Alumni"
+  }
+];
+
+export const allTeamMembers = [...administration, ...faculty, ...researchAssociatesAndGraduateTrainees, ...alumni];

@@ -68,7 +68,7 @@ export const upcomingEvents: Event[] = [
     ],
     imageUrl: "/hero-media/c-elegans-toheeb.webp",
     fees: [
-      "Deadline: Wednesday 15th July, 2026"
+      "Deadline: Wednesday 15th July, 2026 [Extended]"
     ],
     organizers: [
       {

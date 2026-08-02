@@ -6,6 +6,7 @@ import TeamMemberCard from "@/components/cards/TeamMemberCard";
 import type { TeamMember } from "@/data/teamData";
 import {
   administration,
+  alumni,
   faculty,
   researchAssociatesAndGraduateTrainees,
 } from "@/data/teamData";
@@ -109,6 +110,35 @@ const TeamCategory = () => {
               />
             ))}
           </motion.div>
+
+          {categoryKey === "research-associates" && (
+            <motion.div
+              className="mt-16"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+            >
+              <div className="mb-6 flex items-center gap-4">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700" />
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Alumni</h2>
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700" />
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {alumni.map((member) => (
+                  <div
+                    key={member.id}
+                    className="rounded-xl border border-gray-200 bg-gray-50 px-5 py-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-gray-700 dark:bg-gray-800/70"
+                  >
+                    <p className="font-medium text-gray-900 dark:text-white">{member.name}</p>
+                    {member.role && (
+                      <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{member.role}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </div>
       </section>
     </Layout>
