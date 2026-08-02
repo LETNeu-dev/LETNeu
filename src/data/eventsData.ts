@@ -67,9 +67,8 @@ export const upcomingEvents: Event[] = [
       }
     ],
     imageUrl: "/hero-media/c-elegans-toheeb.webp",
-    registrationUrl: "https://forms.gle/wcZB9Wjz2W1TU9J27",
     fees: [
-      "Deadline: Friday 10th July, 2026"
+      "Deadline: Wednesday 15th July, 2026"
     ],
     organizers: [
       {
@@ -142,7 +141,7 @@ export const upcomingEvents: Event[] = [
         // imageUrl: "https://i.postimg.cc/3NY3PDSJ/LETNeu-ISN-2025.jpg"
       },
       {
-        name: "Prof. Daiana Silva Avila",
+        name: "Prof Daiana Silva Avila",
         position: "Associate Professor and Leader",
         affiliation: "Laboratory of Biochemistry and Toxicology in Caenorhabditis elegans (GBToxCe), Federal University of Pampa, Brazil.",
         role: "Speaker (Virtually)",
@@ -282,7 +281,7 @@ export const pastEvents: Event[] = [
         // imageUrl: "https://i.postimg.cc/3NY3PDSJ/LETNeu-ISN-2025.jpg"
       },
       {
-        name: "Prof. Olumide A. T. Ogundahunsi",
+        name: "Prof Olumide A. T. Ogundahunsi",
         position: "Professor of Pharmacology and Therapeutics, UNIMED",
         affiliation: "Senior Diplomat Staff, World Health Organization, Geneva (Retired)",
         role: "Speaker",

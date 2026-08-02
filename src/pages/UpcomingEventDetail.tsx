@@ -170,7 +170,7 @@ const UpcomingEventDetail = () => {
                   </a>
                 ) : (
                   <div className="px-4 py-3 bg-secondary/50 dark:bg-gray-700/50 text-foreground/70 rounded-md text-center">
-                    Registration details are not available yet.
+                    Applications are no longer accepted for this event.
                   </div>
                 )}
               </motion.div>
