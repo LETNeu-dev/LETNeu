@@ -212,7 +212,10 @@ export const researchAssociatesAndGraduateTrainees: TeamMember[] = [
     id: 21,
     name: "Kehinde Akeredolu",
     role: "Graduate Intern",
-    image: "/hero-media/SNV_6360.jpg"
+    image: "/hero-media/SNV_6360.jpg",
+    email: "Kehindepatrick2019@gmail.com",
+    linkedin: "https://www.linkedin.com/in/akeredolu-kehinde-b2b063333?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    instagram: "https://www.instagram.com/dhaymian_?igsh=MXN3bGdtOThoams0Mw%3D%3D&utm_source=qr"
   },
   {
     id: 22,
