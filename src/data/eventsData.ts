@@ -45,6 +45,14 @@ export interface Event {
 }
 
 export const upcomingEvents: Event[] = [
+  
+];
+
+
+
+
+
+export const pastEvents: Event[] = [
   {
     id: 1,
     title: "GSA Mini Workshop on the C. elegans Model in Nigeria",
@@ -198,15 +206,42 @@ export const upcomingEvents: Event[] = [
       }
     ],
     flyerUrl: "/hero-media/C-elegans_Workshop-flyer.jpg",
+    gallery: [
+      "/hero-media/gsa_2026_gallery/gsa-172.jpg",
+      "/hero-media/gsa_2026_gallery/gsa-173.jpg",
+      "/hero-media/gsa_2026_gallery/gsa-176.jpg",
+      "/hero-media/gsa_2026_gallery/gsa-177.jpg",
+      "/hero-media/gsa_2026_gallery/gsa-178.jpg",
+      "/hero-media/gsa_2026_gallery/gsa-179.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_0800-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_0873-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_0880-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_0944-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1053-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1056-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1065-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1068-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1080-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1137-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1145-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1149-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1171-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1190-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1232-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1241-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1285-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1309-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1324-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1332-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1349-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1359-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1374-300kb.jpg",
+      "/hero-media/gsa_2026_gallery/IMG_1379-300kb.jpg"
+    ],
+    isPast: true,
     category: 'workshop'
-  }
-];
+  },
 
-
-
-
-
-export const pastEvents: Event[] = [
   {
     id: 2,
     title: "FBMS International Conference and Symposiums",
